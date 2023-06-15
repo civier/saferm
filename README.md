@@ -26,9 +26,9 @@ safermrf protects against these 3 cases -
   
 **In all these cases, running 'rm -rf' may result in the deletion of all folders in the tree below FOLDER which are writable to user**
 
-safermrf does not protect however against the case that the user deletes an unitended FOLDER, but all folders in the tree below FOLDER as well as the parent of FOLDER are writable to user.
+safermrf does not protect however against the case that the user deletes an unitended FOLDER, but all folders in the tree below FOLDER as well as the parent of FOLDER are writable to user. This might exclude home and project folders from accidental deletion using safermrf, but their subfolders are still at risk.
 
-safermrf has multiple advantages comapred with replacing rm with moving files to trash and then removing them:
+safermrf has multiple advantages comapred to replacing rm with moving files to trash:
 
 - the trash folder is usually in the user home directory, and it might be too small to hold the whole of FOLDER. safermrf can use any SAFEFOLDER for the backup archive.
 - safermrf works even if SAFEFOLDER has limited number of unused indoes (only 1 additional inode is necessary for safermrf)
