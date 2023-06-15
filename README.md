@@ -3,8 +3,9 @@ Folder deletion with safeguards against human error
 
 USAGE
 
-source path/to/file/setup_saferm.sh
-saferm FOLDER
+``source path/to/file/setup_saferm.sh``
+
+``saferm FOLDER``
 
 OUTPUT
 
