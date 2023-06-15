@@ -3,7 +3,7 @@ Folder deletion with safeguards against human error
 
 USAGE
 
-``source path/to/file/setup_safermrf.sh SAFEFOLDER``
+``source setup_safermrf.sh SAFEFOLDER``
 
 ``safermrf FOLDER``
 
