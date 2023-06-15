@@ -11,7 +11,7 @@ ARGUMENTS
 
 FOLDER - the folder to delete
 
-SAFEFOLDER - the folder to which safermrf saves the backup archive (in case FOLDER cannot be deleted in full)
+SAFEFOLDER - the folder to which safermrf saves the backup archive
 
 OUTPUT
 
