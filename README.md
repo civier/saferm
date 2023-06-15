@@ -36,3 +36,7 @@ safermrf has multiple advantages comapred to replacing rm with moving files to t
 - safermrf does not leave any traces if FODLER can be removed in full. In that case, the backup archive will be deleted before safermrf exits.
 - if the trash folder is on another drive than FOLDER, moving files to trash will be implemented as a recdursive copy command, which is slow. safermrf only creates a single backup archive file, which is much faster.
 - safermrf does not require the user to run 'rm -rf' at any point, so it is safer. If rm is replaced with moving files to trash, the user will ultimately need to delete folders in the trash folder using 'rm -rf'
+
+WARNING
+
+safermrf still does not handle a missing or improper SAFEFOLDER argument
