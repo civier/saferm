@@ -26,7 +26,7 @@ saferm protects against 3 cases where running 'rm -rf' might have catastrophic o
 
 saferm does not protect against the case that the user deletes an unitended FOLDER, but all folders in the tree below FOLDER as well as the parent of FOLDER are writable to user.
 
-saferm has multiple advantages comapred with replacing rm with moving files to trash, and then removing them:
+saferm has multiple advantages comapred with replacing rm with moving files to trash and then removing them:
 
 - the trash folder is usually in the user home directory, and it might be too small to hold the whole of FOLDER. saferm can use any SAFEFOLDER for the backup archive.
 - saferm works even if SAFEFOLDER has limited number of unused indoes (only 1 additional inode is necessary for saferm)
