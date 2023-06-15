@@ -19,12 +19,14 @@ Otherwise, an error message(s) will be displayed, and if safermrf created a back
 
 NOTES
 
-safermrf protects against 3 cases where running 'rm -rf' might have catastrophic outcomes -
+safermrf protects against these 3 cases -
 1) FOLDER is not writable to user - safermrf will do nothing
 2) The parent directory of FOLDER is not writable to user - safermrf will do nothing
-3) The tree below FOLDER contains at least one directory not writable to user - safermrf may remove some folders below FOLDER (and the files they contain) that are writable to user. However, the complete content of FOLDER will be available in the tar file created in SAFEFOLER.
+3) The tree below FOLDER contains at least one directory not writable to user - safermrf may remove some folders below FOLDER (and the files they contain) that are writable to user. However, the complete content of FOLDER will be available in the tar file created in SAFEFOLER
+  
+In all thees cases, running 'rm -rf' may result in the deletion of all folders in the tree below FOLDER which are writable to user.
 
-safermrf does not protect against the case that the user deletes an unitended FOLDER, but all folders in the tree below FOLDER as well as the parent of FOLDER are writable to user.
+safermrf does not protect however against the case that the user deletes an unitended FOLDER, but all folders in the tree below FOLDER as well as the parent of FOLDER are writable to user.
 
 safermrf has multiple advantages comapred with replacing rm with moving files to trash and then removing them:
 
