@@ -39,4 +39,4 @@ safermrf has multiple advantages comapred to replacing rm with moving files to t
 
 WARNING
 
-safermrf still does not handle a missing or improper SAFEFOLDER argument
+safermrf still does not handle missing or improper SAFEFOLDER or FOLDER arguments
