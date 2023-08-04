@@ -40,3 +40,7 @@ safermrf has multiple advantages comapred to replacing rm with moving files to t
 WARNING
 
 safermrf still does not handle missing or improper SAFEFOLDER or FOLDER arguments
+
+ACKNOWLEDGMENTS
+
+The authors acknowledge the facilities and scientific and technical assistance of the National Imaging Facility, a National Collaborative Research Infrastructure Strategy (NCRIS) capability, at Swinburne Neuroimaging, Swinburne University of Technology.
